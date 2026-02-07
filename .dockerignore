@@ -1,0 +1,25 @@
+node_modules
+.next/cache
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+
+# Git files
+.git
+.gitignore
+
+# Docker files
+Dockerfile
+.dockerignore
+
+# IDE files
+.vscode
+.idea
