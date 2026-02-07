@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
 console.log(process.env.NEXT_PUBLIC_URL); // connect to backend
-const socket = io(process.env.NEXT_PUBLIC_URL);
+const socket = io(process.env.NEXT_PUBLIC_URL, {
+  transports: ["websocket"]});
 
 function App() {
   const [message, setMessage] = useState("");
